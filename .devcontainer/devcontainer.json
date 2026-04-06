@@ -1,0 +1,36 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+  "name": "Python 3",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/python:3-3.13-bookworm",
+  "features": {
+    "ghcr.io/devcontainer-community/devcontainer-features/astral.sh-uv:1": {},
+    "ghcr.io/devcontainers/features/node:1": {},
+    // Desktop (Xvfb + VNC + noVNC) so browser-use agent is visible.
+    "ghcr.io/devcontainers/features/desktop-lite:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+
+  // Forward VNC viewer port so you can watch browser-use agent live.
+  "forwardPorts": [6080, 5901],
+  "portsAttributes": {
+    "6080": { "label": "Browser Agent Viewer (noVNC)", "onAutoForward": "notify" },
+    "5901": { "label": "VNC", "onAutoForward": "ignore" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-containers"
+      ]
+    }
+  }
+
+  // Configure tool-specific properties.
+  // "customizations": {},
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}

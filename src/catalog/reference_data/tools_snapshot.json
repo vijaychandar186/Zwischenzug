@@ -1,0 +1,82 @@
+[
+  {
+    "name": "BashTool",
+    "responsibility": "Run shell commands",
+    "source_hint": "tools:bash"
+  },
+  {
+    "name": "FileReadTool",
+    "responsibility": "Read files from workspace",
+    "source_hint": "tools:file-read"
+  },
+  {
+    "name": "FileEditTool",
+    "responsibility": "Edit files in workspace",
+    "source_hint": "tools:file-edit"
+  },
+  {
+    "name": "SearchTool",
+    "responsibility": "Search code by pattern",
+    "source_hint": "tools:search"
+  },
+  {
+    "name": "GlobTool",
+    "responsibility": "List files by glob",
+    "source_hint": "tools:glob"
+  },
+  {
+    "name": "WebSearchTool",
+    "responsibility": "Search the web",
+    "source_hint": "tools:web-search"
+  },
+  {
+    "name": "FetchTool",
+    "responsibility": "Fetch URL content",
+    "source_hint": "tools:fetch"
+  },
+  {
+    "name": "PythonTool",
+    "responsibility": "Execute Python snippets",
+    "source_hint": "tools:python"
+  },
+  {
+    "name": "JSONTool",
+    "responsibility": "Validate and format JSON",
+    "source_hint": "tools:json"
+  },
+  {
+    "name": "MarkdownTool",
+    "responsibility": "Format markdown output",
+    "source_hint": "tools:markdown"
+  },
+  {
+    "name": "GitStatusTool",
+    "responsibility": "Read git status",
+    "source_hint": "tools:git-status"
+  },
+  {
+    "name": "GitDiffTool",
+    "responsibility": "Read git diff",
+    "source_hint": "tools:git-diff"
+  },
+  {
+    "name": "MCPTool",
+    "responsibility": "Query MCP resources",
+    "source_hint": "tools:mcp"
+  },
+  {
+    "name": "MCPResourceTool",
+    "responsibility": "Read MCP resource URI",
+    "source_hint": "tools:mcp-resource"
+  },
+  {
+    "name": "SessionStoreTool",
+    "responsibility": "Persist and load session payloads",
+    "source_hint": "tools:session-store"
+  },
+  {
+    "name": "PermissionTool",
+    "responsibility": "Evaluate permission filters",
+    "source_hint": "tools:permission"
+  }
+]

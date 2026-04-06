@@ -1,0 +1,162 @@
+[
+  {
+    "name": "summary",
+    "responsibility": "Render a workspace summary",
+    "source_hint": "main:summary"
+  },
+  {
+    "name": "manifest",
+    "responsibility": "Print workspace manifest",
+    "source_hint": "main:manifest"
+  },
+  {
+    "name": "parity-audit",
+    "responsibility": "Compare local surface metrics",
+    "source_hint": "main:parity-audit"
+  },
+  {
+    "name": "setup-report",
+    "responsibility": "Display startup report",
+    "source_hint": "main:setup-report"
+  },
+  {
+    "name": "command-graph",
+    "responsibility": "Show command graph",
+    "source_hint": "main:command-graph"
+  },
+  {
+    "name": "tool-pool",
+    "responsibility": "Show active tool pool",
+    "source_hint": "main:tool-pool"
+  },
+  {
+    "name": "bootstrap-graph",
+    "responsibility": "Show bootstrap stages",
+    "source_hint": "main:bootstrap-graph"
+  },
+  {
+    "name": "subsystems",
+    "responsibility": "List subsystem modules",
+    "source_hint": "main:subsystems"
+  },
+  {
+    "name": "commands",
+    "responsibility": "List command catalog",
+    "source_hint": "main:commands"
+  },
+  {
+    "name": "tools",
+    "responsibility": "List tool catalog",
+    "source_hint": "main:tools"
+  },
+  {
+    "name": "route",
+    "responsibility": "Route prompt to command/tool matches",
+    "source_hint": "main:route"
+  },
+  {
+    "name": "bootstrap",
+    "responsibility": "Build runtime session",
+    "source_hint": "main:bootstrap"
+  },
+  {
+    "name": "turn-loop",
+    "responsibility": "Run iterative turn loop",
+    "source_hint": "main:turn-loop"
+  },
+  {
+    "name": "flush-transcript",
+    "responsibility": "Persist transcript",
+    "source_hint": "main:flush-transcript"
+  },
+  {
+    "name": "load-session",
+    "responsibility": "Load persisted session",
+    "source_hint": "main:load-session"
+  },
+  {
+    "name": "remote-mode",
+    "responsibility": "Simulate remote mode",
+    "source_hint": "main:remote-mode"
+  },
+  {
+    "name": "ssh-mode",
+    "responsibility": "Simulate ssh mode",
+    "source_hint": "main:ssh-mode"
+  },
+  {
+    "name": "teleport-mode",
+    "responsibility": "Simulate teleport mode",
+    "source_hint": "main:teleport-mode"
+  },
+  {
+    "name": "direct-connect-mode",
+    "responsibility": "Simulate direct connect mode",
+    "source_hint": "main:direct-connect-mode"
+  },
+  {
+    "name": "deep-link-mode",
+    "responsibility": "Simulate deep-link mode",
+    "source_hint": "main:deep-link-mode"
+  },
+  {
+    "name": "show-command",
+    "responsibility": "Inspect command details",
+    "source_hint": "main:show-command"
+  },
+  {
+    "name": "show-tool",
+    "responsibility": "Inspect tool details",
+    "source_hint": "main:show-tool"
+  },
+  {
+    "name": "exec-command",
+    "responsibility": "Execute mirrored command handler",
+    "source_hint": "main:exec-command"
+  },
+  {
+    "name": "exec-tool",
+    "responsibility": "Execute mirrored tool handler",
+    "source_hint": "main:exec-tool"
+  },
+  {
+    "name": "zwischenzug",
+    "responsibility": "Run Rich wave mascot app",
+    "source_hint": "main:zwischenzug"
+  },
+  {
+    "name": "game",
+    "responsibility": "Launch a built-in terminal game",
+    "source_hint": "main:game"
+  },
+  {
+    "name": "game/flappy-bird",
+    "responsibility": "Play the built-in Flappy Bird terminal game",
+    "source_hint": "slash:/game/flappy-bird"
+  },
+  {
+    "name": "review",
+    "responsibility": "Review code and report risk",
+    "source_hint": "slash:/review"
+  },
+  {
+    "name": "test",
+    "responsibility": "Run test strategy flow",
+    "source_hint": "slash:/test"
+  },
+  {
+    "name": "plan",
+    "responsibility": "Create execution plan",
+    "source_hint": "slash:/plan"
+  },
+  {
+    "name": "commit",
+    "responsibility": "Prepare commit message guidance",
+    "source_hint": "slash:/commit"
+  },
+  {
+    "name": "explain",
+    "responsibility": "Explain code with references",
+    "source_hint": "slash:/explain"
+  }
+]
