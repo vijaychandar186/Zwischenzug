@@ -23,6 +23,26 @@ zwis setup-browser     # installs Chromium + VNC packages, starts VNC, launches 
 
 > `zwis setup-browser` must be run once per session (e.g. after a Codespace restart) to start the VNC stack. Without it, browser tools still work — just headlessly with no visual.
 
+**Install latest from GitHub source (`main`):**
+
+```bash
+pip install "zwis[browser] @ git+https://github.com/vijaychandar186/Zwischenzug.git@main"
+zwis setup-browser
+```
+
+If you want to remove that install later, uninstall the published package name:
+
+```bash
+pip uninstall zwis
+```
+
+To pull the latest `main` again and reinstall cleanly:
+
+```bash
+pip install --force-reinstall "zwis[browser] @ git+https://github.com/vijaychandar186/Zwischenzug.git@main"
+zwis setup-browser
+```
+
 ## MCP Support
 
 Zwischenzug can now load tools and resources from MCP servers and expose them directly to the agent in `zwis chat` and `zwis run`.
@@ -263,6 +283,28 @@ skills/                      ← Workspace-root skills (highest precedence, drop
 ```bash
 pip install -e .
 zwis --init
+```
+
+### Install From Source
+
+For a direct install from GitHub instead of a local editable checkout:
+
+```bash
+pip install "zwis[browser] @ git+https://github.com/vijaychandar186/Zwischenzug.git@main"
+zwis setup-browser
+```
+
+Uninstall:
+
+```bash
+pip uninstall zwis
+```
+
+Force reinstall from the latest `main`:
+
+```bash
+pip install --force-reinstall "zwis[browser] @ git+https://github.com/vijaychandar186/Zwischenzug.git@main"
+zwis setup-browser
 ```
 
 `zwis --init` writes a `.env` and guides you through provider -> model -> API key selection.
@@ -507,6 +549,18 @@ The `browser_agent` tool gives a plain-English task to an autonomous browser-use
 ```
 
 The agent plans and executes browser actions autonomously — no need to manually issue open/click/type commands.
+
+Example browser-use test:
+
+```text
+Use browser_agent to search Amazon for brown furniture center tables, sort the results by price from low to high, open the cheapest matching item, and add it to the cart.
+```
+
+If you want to watch that run live in a cloud VM or Codespace, first start the browser stack:
+
+```bash
+zwis setup-browser
+```
 
 ### Watching Live via noVNC
 
