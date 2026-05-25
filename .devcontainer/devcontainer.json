@@ -9,7 +9,7 @@
     "ghcr.io/devcontainers/features/node:1": {},
     // Desktop (Xvfb + VNC + noVNC) so browser-use agent is visible.
     "ghcr.io/devcontainers/features/desktop-lite:1": {},
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    "ghcr.io/devcontainers/features/docker-in-docker:3": {}
   },
 
   "postCreateCommand": "bash .devcontainer/setup.sh",
