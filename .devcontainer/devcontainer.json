@@ -6,7 +6,7 @@
   "image": "mcr.microsoft.com/devcontainers/python:3-3.13-bookworm",
   "features": {
     "ghcr.io/devcontainer-community/devcontainer-features/astral.sh-uv:1": {},
-    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/node:2": {},
     // Desktop (Xvfb + VNC + noVNC) so browser-use agent is visible.
     "ghcr.io/devcontainers/features/desktop-lite:1": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
